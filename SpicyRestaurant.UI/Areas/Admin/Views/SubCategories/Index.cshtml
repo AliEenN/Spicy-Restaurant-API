@@ -1,0 +1,102 @@
+﻿@model IEnumerable<IndexSubCategoryViewModel>
+
+@{
+    ViewData["Title"] = "Sub Categories List";
+}
+
+<div class="whiteBackground container mt-4">
+    <div class="row justify-content-between">
+        <div class="col-8">
+            <h1 class="text-primary">
+                Sub Categories List
+            </h1>
+        </div>
+
+        <div class="col-4 mt-2">
+            <a asp-action="DownloadExcel" class="btn btn-success text-white">Download Excel</a>
+            <a onclick="showInPopup('@Url.Action("CreateOrEdit", "SubCategories", null, Context.Request.Scheme)', 'New Sub Category')" class="btn btn-success text-white">New Sub Category</a>
+        </div>
+    </div>
+
+    <hr />
+    
+    <div id="view-all">
+        @await Html.PartialAsync("_ViewAll", Model)
+    </div>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        //function updateSubCategoriesList() {
+        //    var selectedCategory = document.getElementById("ddlCategories").value;
+        //    $list = $('#divSubCategoriesList');
+
+        //    $.ajax({
+        //        url: '/admin/subcategories/getsubcategories/' + selectedCategory,
+        //        type: 'GET',
+        //        dataType: 'text',
+        //        success: function (data) {
+        //            results = JSON.parse(data);
+        //            $list.html('');
+        //            $list.append('<ul class="list-group">')
+        //            for (i in results) {
+        //                $list.append('<li class="list-group-item">' + results[i].text + '</li>')
+        //            }
+        //            $list.append('<ul>')
+        //        }
+        //    });
+        //}
+
+        //$("#ddlCategories").on("change", function () {
+        //    updateSubCategoriesList();
+        //});
+
+        $(document).ready(function () {
+            // updateSubCategoriesList();
+
+            $('#btnSub').click(function () {
+                var count = $(".ckitem:checked").length;
+
+                if (count == 0) {
+                    alert("You Don\'t Chosse Any Sub Category !");
+                    return false;
+                }
+                else {
+                    return confirm("Are You Sure, You Want To Delete This Sub Category(s)?");
+                }
+            });
+
+
+            var $tbl = $('#tbl');
+            var $header = $tbl.find('thead .ckheader');
+            var $item = $tbl.find('tbody .ckitem');
+
+            $(function () {
+                $item.on('change', function () {
+                    if ($(this).is(':checked')) {
+                        $(this).closest('tr').addClass('newRowColor');
+                    }
+                    else {
+                        $(this).closest('tr').removeClass('newRowColor');
+                    }
+                });
+
+                $header.change(function () {
+                    var c = this.checked;
+                    $item.prop("checked", c);
+                    $item.trigger('check');
+
+                    if ($(this).is(':checked')) {
+                        $($item).closest('tr').addClass('newRowColor');
+                    }
+                    else {
+                        $($item).closest('tr').removeClass('newRowColor');
+                    }
+                });
+            });
+        });
+    </script>
+}

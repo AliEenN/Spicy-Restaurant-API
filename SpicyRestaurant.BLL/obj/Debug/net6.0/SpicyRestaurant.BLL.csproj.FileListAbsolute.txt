@@ -1,0 +1,12 @@
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\bin\Debug\net6.0\SpicyRestaurant.BLL.deps.json
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\bin\Debug\net6.0\SpicyRestaurant.BLL.dll
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\bin\Debug\net6.0\SpicyRestaurant.BLL.pdb
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\SpicyRestaurant.BLL.csproj.AssemblyReference.cache
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\SpicyRestaurant.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\SpicyRestaurant.BLL.AssemblyInfoInputs.cache
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\SpicyRestaurant.BLL.AssemblyInfo.cs
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\SpicyRestaurant.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\SpicyRestaurant.BLL.dll
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\refint\SpicyRestaurant.BLL.dll
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\SpicyRestaurant.BLL.pdb
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.BLL\obj\Debug\net6.0\ref\SpicyRestaurant.BLL.dll

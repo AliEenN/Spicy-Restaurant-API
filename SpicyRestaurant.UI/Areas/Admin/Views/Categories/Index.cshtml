@@ -1,0 +1,77 @@
+﻿@model IEnumerable<CategoryViewModel>
+
+@{
+    ViewData["Title"] = "Categories List";
+}
+
+<div class="whiteBackground container mt-4">
+    <div class="row justify-content-between">
+        <div class="col-8">
+            <h1 class="text-primary">
+                Categories List
+            </h1>
+        </div>
+
+        <div class="col-4 mt-2">
+            <a asp-action="DownloadExcel" class="btn btn-success text-white">Download Excel</a>
+            <a onclick="showInPopup('@Url.Action("CreateOrEdit", "Categories", null, Context.Request.Scheme)', 'New Category')" class="btn btn-success text-white">New Category</a>
+        </div>
+    </div>
+
+    <hr />
+    
+    <div id="view-all">
+        @await Html.PartialAsync("_ViewAll", Model)
+    </div>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        $(document).ready(function () {
+
+            $('#btnSub').click(function () {
+                var count = $(".ckitem:checked").length;
+
+                if (count == 0) {
+                    alert("You Don\'t Chosse Any Category !");
+                    return false;
+                }
+                else {
+                    return confirm("Are You Sure, You Want To Delete This Category(s)?");
+                }
+            });
+
+
+            var $tbl = $('#tbl');
+            var $header = $tbl.find('thead .ckheader');
+            var $item = $tbl.find('tbody .ckitem');
+
+            $(function () {
+                $item.on('change', function () {
+                    if ($(this).is(':checked')) {
+                        $(this).closest('tr').addClass('newRowColor');
+                    }
+                    else {
+                        $(this).closest('tr').removeClass('newRowColor');
+                    }
+                });
+
+                $header.change(function () {
+                    var c = this.checked;
+                    $item.prop("checked", c);
+                    $item.trigger('check');
+
+                    if ($(this).is(':checked')) {
+                        $($item).closest('tr').addClass('newRowColor');
+                    }
+                    else {
+                        $($item).closest('tr').removeClass('newRowColor');
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,17 @@
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.csproj.AssemblyReference.cache
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.AssemblyInfoInputs.cache
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.AssemblyInfo.cs
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\bin\Debug\net6.0\SpicyRestaurant.DAL.deps.json
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\bin\Debug\net6.0\SpicyRestaurant.DAL.runtimeconfig.json
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\bin\Debug\net6.0\SpicyRestaurant.DAL.dll
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\bin\Debug\net6.0\SpicyRestaurant.DAL.pdb
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.dll
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\refint\SpicyRestaurant.DAL.dll
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.pdb
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.genruntimeconfig.cache
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\ref\SpicyRestaurant.DAL.dll
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\bin\Debug\net6.0\SpicyRestaurant.BLL.dll
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\bin\Debug\net6.0\SpicyRestaurant.BLL.pdb
+C:\Users\ali\source\repos\SpicyRestaurant\SpicyRestaurant.DAL\obj\Debug\net6.0\SpicyRestaurant.DAL.csproj.CopyComplete

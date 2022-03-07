@@ -1,0 +1,11 @@
+﻿global using SpicyRestaurant.BLL.ViewModels.SubCategoriesViewModels;
+global using SpicyRestaurant.BLL.ViewModels;
+global using SpicyRestaurant.BLL.Interfaces;
+global using SpicyRestaurant.UI.Utilities;
+global using SpicyRestaurant.BLL.Models;
+global using Microsoft.AspNetCore.Mvc.Rendering;
+global using ClosedXML.Excel;
+global using Microsoft.AspNetCore.Mvc;
+global using NToastNotify;
+global using AutoMapper;
+global using System.Linq;
