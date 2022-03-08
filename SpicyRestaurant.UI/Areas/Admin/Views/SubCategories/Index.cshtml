@@ -14,7 +14,7 @@
 
         <div class="col-4 mt-2">
             <a asp-action="DownloadExcel" class="btn btn-success text-white">Download Excel</a>
-            <a onclick="showInPopup('@Url.Action("CreateOrEdit", "SubCategories", null, Context.Request.Scheme)', 'New Sub Category')" class="btn btn-success text-white">New Sub Category</a>
+            <a onclick="showInPopup('@Url.Action("CreateOrEdit", "SubCategories", null, Context.Request.Scheme)', 'New SubCategory')" class="btn btn-success text-white">New Sub Category</a>
         </div>
     </div>
 
@@ -32,6 +32,7 @@
     <script>
         //function updateSubCategoriesList() {
         //    var selectedCategory = document.getElementById("ddlCategories").value;
+        //    console.log(selectedCategory);
         //    $list = $('#divSubCategoriesList');
 
         //    $.ajax({
@@ -40,6 +41,7 @@
         //        dataType: 'text',
         //        success: function (data) {
         //            results = JSON.parse(data);
+        //            console.log(results);
         //            $list.html('');
         //            $list.append('<ul class="list-group">')
         //            for (i in results) {
@@ -50,22 +52,26 @@
         //    });
         //}
 
-        //$("#ddlCategories").on("change", function () {
-        //    updateSubCategoriesList();
-        //});
+        
 
         $(document).ready(function () {
-            // updateSubCategoriesList();
+            $("#ddlCategories").on("change", function () {
+                updateSubCategoriesList();
+            });
+
+            $("#ddlCategories").on("click", function () {
+                updateSubCategoriesList();
+            });
 
             $('#btnSub').click(function () {
                 var count = $(".ckitem:checked").length;
 
                 if (count == 0) {
-                    alert("You Don\'t Chosse Any Sub Category !");
+                    alert("You Don\'t Chosse Any Category !");
                     return false;
                 }
                 else {
-                    return confirm("Are You Sure, You Want To Delete This Sub Category(s)?");
+                    return confirm("Are You Sure, You Want To Delete This Category(s)?");
                 }
             });
 

@@ -64,6 +64,30 @@ namespace SpicyRestaurant.DAL.Repositories
             return await query.ToListAsync();
         }
 
+        public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> craitria, Expression<Func<TEntity, object>> orderBy, string orderByDirection = OrderBy.Ascending)
+        {
+            IQueryable<TEntity> query = _context.Set<TEntity>().Where(craitria);
+
+            if (orderByDirection == OrderBy.Descending)
+                query = query.OrderByDescending(orderBy);
+
+            query = query.OrderBy(orderBy);
+
+            return query.ToList();
+        }
+
+        public async Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> craitria, Expression<Func<TEntity, object>> orderBy, string orderByDirection = OrderBy.Ascending)
+        {
+            IQueryable<TEntity> query = _context.Set<TEntity>().Where(craitria);
+
+            if (orderByDirection == OrderBy.Descending)
+                query = query.OrderByDescending(orderBy);
+
+            query = query.OrderBy(orderBy);
+
+            return await query.ToListAsync();
+        }
+
         public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, object>> orderBy, string[] includes, string orderByDirection = OrderBy.Ascending)
         {
             IQueryable<TEntity> query = _context.Set<TEntity>();

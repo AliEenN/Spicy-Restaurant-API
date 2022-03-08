@@ -19,6 +19,9 @@ namespace SpicyRestaurant.BLL.Interfaces
         IEnumerable<TEntity> GetAll(Expression<Func<TEntity, object>> orderBy, string orderByDirection = OrderBy.Ascending);
         Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, object>> orderBy, string orderByDirection = OrderBy.Ascending);
 
+        IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> craitria, Expression<Func<TEntity, object>> orderBy, string orderByDirection = OrderBy.Ascending);
+        Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> craitria, Expression<Func<TEntity, object>> orderBy, string orderByDirection = OrderBy.Ascending);
+
         IEnumerable<TEntity> GetAll(Expression<Func<TEntity, object>> orderBy, string[] includes, string orderByDirection = OrderBy.Ascending);
         Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, object>> orderBy, string[] includes, string orderByDirection = OrderBy.Ascending);
 
