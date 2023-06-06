@@ -1,8 +1,6 @@
+using SpicyRestaurant.DAL.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using NToastNotify;
-using SpicyRestaurant.BLL.Interfaces;
-using SpicyRestaurant.DAL.Data;
 using SpicyRestaurant.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
