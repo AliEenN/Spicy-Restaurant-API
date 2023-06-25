@@ -2475,7 +2475,7 @@
       "projectName": "SpicyRestaurant.DAL",
       "projectPath": "C:\\Users\\HP\\source\\repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.DAL\\SpicyRestaurant.DAL.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Source\\Repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.DAL\\obj\\",
+      "outputPath": "C:\\Users\\HP\\source\\repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2551,7 +2551,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using SpicyRestaurant.DAL.Data;
+using SpicyRestaurant.BLL.Models;
+using Microsoft.EntityFrameworkCore;
 using SpicyRestaurant.BLL.Interfaces;
-using SpicyRestaurant.BLL.ViewModels;
+using System.ComponentModel.DataAnnotations;
 
 namespace SpicyRestaurant.API.Controllers
 {
@@ -9,20 +12,42 @@ namespace SpicyRestaurant.API.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
+        protected ApplicationDbContext _context;
 
-        public CategoryController(IUnitOfWork unitOfWork, IMapper mapper)
+        public CategoryController(ApplicationDbContext context)
         {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
+            _context = context;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> GetAsync()
         {
-            var query = await _unitOfWork.Categories.GetAllAsync(e => e.Name);
-            return Ok(_mapper.Map<IEnumerable<CategoryViewModel>>(query));
+            return Ok(await _context.Categories.ToListAsync());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddAsync(Category category)
+        {
+            await _context.Categories.AddAsync(category);
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
+
+        [HttpGet]
+        [Route("Id={Id}")]
+        public async Task<IActionResult> GetByIdAsync([Required] byte Id)
+        {
+            var result = await _context.Categories.FindAsync(Id);
+            if (result == null) return NotFound();
+            return Ok(result);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateAsync(Category category)
+        {
+            _context.Categories.Update(category);
+            await _context.SaveChangesAsync();
+            return Ok();
         }
     }
 }
