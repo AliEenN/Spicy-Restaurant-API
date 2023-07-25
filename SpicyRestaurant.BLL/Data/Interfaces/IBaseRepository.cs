@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpicyRestaurant.BLL.Interfaces
+namespace SpicyRestaurant.BLL.Data.Interfaces
 {
     public interface IBaseRepository<TEntity> where TEntity : class
     {

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SpicyRestaurant.BLL.Data.Entities;
 
-namespace SpicyRestaurant.BLL.ViewModels
+namespace SpicyRestaurant.BLL.ViewModels.SubCategoriesViewModels
 {
-    public class IndexSubCategoryViewModel
+    public class SubCategoryFormViewModel
     {
         public int Id { get; set; }
 
@@ -16,5 +17,7 @@ namespace SpicyRestaurant.BLL.ViewModels
         [Display(Name = "Category Name")]
         public byte CategoryId { get; set; }
         public Category Category { get; set; }
+
+        public IEnumerable<Category> CategoriesList { get; set; }
     }
 }

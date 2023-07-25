@@ -9,93 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SpicyRestaurant.UI
 build_property.RootNamespace = SpicyRestaurant.UI
-build_property.ProjectDir = C:\Users\HP\source\repos\AliEenN\SpicyRestaurant\SpicyRestaurant.UI\
+build_property.ProjectDir = C:\Users\Ali\source\repos\AliEenN\Spicy-Restaurant-API\SpicyRestaurant.UI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HP\source\repos\AliEenN\SpicyRestaurant\SpicyRestaurant.UI
+build_property.MSBuildProjectDirectory = C:\Users\Ali\source\repos\AliEenN\Spicy-Restaurant-API\SpicyRestaurant.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Admin/Views/Categories/CreateOrEdit.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Admin/Views/Categories/CreateOrEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGVPckVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Admin/Views/Categories/Index.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Admin/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Admin/Views/Categories/_ViewAll.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Admin/Views/Categories/_ViewAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xfVmlld0FsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Admin/Views/SubCategories/CreateOrEdit.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Admin/Views/SubCategories/CreateOrEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3ViQ2F0ZWdvcmllc1xDcmVhdGVPckVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Admin/Views/SubCategories/Index.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Admin/Views/SubCategories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3ViQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Admin/Views/SubCategories/_ViewAll.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Admin/Views/SubCategories/_ViewAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3ViQ2F0ZWdvcmllc1xfVmlld0FsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Customer/Views/Home/Index.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Customer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Customer/Views/Home/Privacy.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Customer/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Customer/Views/_ViewImports.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Customer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Customer/Views/_ViewStart.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Customer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Views/Shared/CustomShared/_EditAndBackToListButtonsPartial.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Views/Shared/CustomShared/_EditAndBackToListButtonsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEN1c3RvbVNoYXJlZFxfRWRpdEFuZEJhY2tUb0xpc3RCdXR0b25zUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Views/Shared/CustomShared/_OperationButtonsPartial.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Views/Shared/CustomShared/_OperationButtonsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEN1c3RvbVNoYXJlZFxfT3BlcmF0aW9uQnV0dG9uc1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Views/Shared/Error.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Views/_ViewImports.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Views/_ViewStart.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/AliEenN/SpicyRestaurant/SpicyRestaurant.UI/Views/Shared/_Layout.cshtml]
+[C:/Users/Ali/source/repos/AliEenN/Spicy-Restaurant-API/SpicyRestaurant.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-o1llm7yjdy

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SpicyRestaurant.BLL.Consts;
-using SpicyRestaurant.BLL.Interfaces;
+using SpicyRestaurant.BLL.Data.Interfaces;
 using SpicyRestaurant.DAL.Data;
 using System;
 using System.Collections.Generic;

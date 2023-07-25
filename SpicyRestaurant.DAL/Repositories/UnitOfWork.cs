@@ -1,5 +1,5 @@
-﻿using SpicyRestaurant.BLL.Interfaces;
-using SpicyRestaurant.BLL.Models;
+﻿using SpicyRestaurant.BLL.Data.Entities;
+using SpicyRestaurant.BLL.Data.Interfaces;
 using SpicyRestaurant.DAL.Data;
 using System;
 using System.Collections.Generic;

@@ -1,9 +1,8 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SpicyRestaurant.DAL.Data;
-using SpicyRestaurant.BLL.Models;
 using Microsoft.EntityFrameworkCore;
-using SpicyRestaurant.BLL.Interfaces;
+using SpicyRestaurant.BLL.ViewModels;
+using SpicyRestaurant.BLL.Data.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace SpicyRestaurant.API.Controllers
@@ -26,9 +25,9 @@ namespace SpicyRestaurant.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddAsync(Category category)
+        public async Task<IActionResult> AddAsync(AddCategoryDTO category)
         {
-            await _context.Categories.AddAsync(category);
+            await _context.Categories.AddAsync(new Category { Name = category.Name });
             await _context.SaveChangesAsync();
             return Ok();
         }

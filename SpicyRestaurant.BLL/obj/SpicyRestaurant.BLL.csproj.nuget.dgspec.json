@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj": {}
+    "C:\\Users\\Ali\\source\\repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj": {
+    "C:\\Users\\Ali\\source\\repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Ali\\source\\repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj",
         "projectName": "SpicyRestaurant.BLL",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.BLL\\obj\\",
+        "projectPath": "C:\\Users\\Ali\\source\\repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj",
+        "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ali\\Source\\Repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

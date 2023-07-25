@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E6K+NhsY3P7Fw7jDYqfD4b41ZVuY8rps0npoY77oTGOXZzGcZ7VdtiHmkApuVJpdx48LOlpJC/FilK5HKTSBCQ==",
+  "dgSpecHash": "78vg35MNT2+ty4kVVCA1t/SRmwogEvcH74MxK3l3uAwfJ/x8SLtuQ4DZ4xkgJfpTS2zGH9zTWgyzDNmdlGg+lQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\AliEenN\\SpicyRestaurant\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj",
+  "projectFilePath": "C:\\Users\\Ali\\source\\repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
