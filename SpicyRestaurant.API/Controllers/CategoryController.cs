@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SpicyRestaurant.DAL.Data;
-using Microsoft.EntityFrameworkCore;
+using SpicyRestaurant.BLL.DTOs;
 using SpicyRestaurant.BLL.ViewModels;
 using SpicyRestaurant.BLL.Data.Entities;
+using SpicyRestaurant.BLL.DTOs.Category;
+using SpicyRestaurant.BLL.Data.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace SpicyRestaurant.API.Controllers
@@ -11,41 +12,51 @@ namespace SpicyRestaurant.API.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        protected ApplicationDbContext _context;
+        public IUnitOfWork unitOfWork { get; set; }
 
-        public CategoryController(ApplicationDbContext context)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            this.unitOfWork = unitOfWork;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAsync()
+        public async Task<IActionResult> GetAllAsync()
         {
-            return Ok(await _context.Categories.ToListAsync());
+            var result = await unitOfWork.Categories.GetAllAsync();
+            return Ok(result);
         }
 
         [HttpPost]
         public async Task<IActionResult> AddAsync(AddCategoryDTO category)
         {
-            await _context.Categories.AddAsync(new Category { Name = category.Name });
-            await _context.SaveChangesAsync();
+            await unitOfWork.Categories.AddAsync(new Category { Name = category.Name });
+            unitOfWork.Complete();
             return Ok();
         }
 
         [HttpGet]
         [Route("Id={Id}")]
-        public async Task<IActionResult> GetByIdAsync([Required] byte Id)
+        public async Task<IActionResult> GetByIdAsync([Required] string Id)
         {
-            var result = await _context.Categories.FindAsync(Id);
+            var result = await unitOfWork.Categories.FindAsync(e => e.Id == Id);
             if (result == null) return NotFound();
             return Ok(result);
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateAsync(Category category)
+        public IActionResult UpdateAsync(EditCategoryDTO category)
         {
-            _context.Categories.Update(category);
-            await _context.SaveChangesAsync();
+            unitOfWork.Categories.Update(new Category { Id = category.Id, Name = category.Name });
+            unitOfWork.Complete();
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("UpdateStatus")]
+        public IActionResult UpdateStatusAsync(UpdateStatusDTO updateCategoryStatus)
+        {
+            unitOfWork.Categories.UpdateStatus(new Category { Id = updateCategoryStatus.Id, Active = updateCategoryStatus.Active });
+            unitOfWork.Complete();
             return Ok();
         }
     }

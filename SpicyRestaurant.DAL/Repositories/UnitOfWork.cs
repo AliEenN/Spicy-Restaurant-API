@@ -1,11 +1,6 @@
-﻿using SpicyRestaurant.BLL.Data.Entities;
+﻿using SpicyRestaurant.DAL.Data;
+using SpicyRestaurant.BLL.Data.Entities;
 using SpicyRestaurant.BLL.Data.Interfaces;
-using SpicyRestaurant.DAL.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpicyRestaurant.DAL.Repositories
 {

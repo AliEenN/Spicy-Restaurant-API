@@ -1,10 +1,5 @@
-﻿using SpicyRestaurant.BLL.Consts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq.Expressions;
+using SpicyRestaurant.BLL.Consts;
 
 namespace SpicyRestaurant.BLL.Data.Interfaces
 {
@@ -25,19 +20,15 @@ namespace SpicyRestaurant.BLL.Data.Interfaces
         IEnumerable<TEntity> GetAll(Expression<Func<TEntity, object>> orderBy, string[] includes, string orderByDirection = OrderBy.Ascending);
         Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, object>> orderBy, string[] includes, string orderByDirection = OrderBy.Ascending);
 
-        TEntity GetById(int id);
-        Task<TEntity> GetByIdAsync(int id);
-
-        TEntity GetByObjectId(object id);
-        Task<TEntity> GetByObjectIdAsync(object id);
-
         TEntity Find(Expression<Func<TEntity, bool>> criteria);
         Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> criteria);
 
         void Add(TEntity entity);
         Task AddAsync(TEntity entity);
 
-        void Edit(TEntity entity);
+        void Update(TEntity entity);
+
+        void UpdateStatus(TEntity entity);
 
         void Delete(TEntity entity);
 

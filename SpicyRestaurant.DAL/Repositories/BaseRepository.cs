@@ -1,13 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SpicyRestaurant.BLL.Consts;
-using SpicyRestaurant.BLL.Data.Interfaces;
+﻿using System.Linq.Expressions;
 using SpicyRestaurant.DAL.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using SpicyRestaurant.BLL.Consts;
+using Microsoft.EntityFrameworkCore;
+using SpicyRestaurant.BLL.Data.Interfaces;
 
 namespace SpicyRestaurant.DAL.Repositories
 {
@@ -25,14 +20,14 @@ namespace SpicyRestaurant.DAL.Repositories
             return _context.Set<TEntity>().ToList();
         }
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync()
-        {
-            return await _context.Set<TEntity>().ToListAsync();
-        }
-
         public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> craitria)
         {
             return _context.Set<TEntity>().Where(craitria).ToList();
+        }
+
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        {
+            return await _context.Set<TEntity>().ToListAsync();
         }
 
         public async Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> craitria)
@@ -120,20 +115,10 @@ namespace SpicyRestaurant.DAL.Repositories
 
         public TEntity GetById(int id)
         {
-            return _context.Set<TEntity>().Find(id);
+            return _context.Set<TEntity>().Find(id)!;
         }
 
-        public async Task<TEntity> GetByIdAsync(int id)
-        {
-            return await _context.Set<TEntity>().FindAsync(id);
-        }
-
-        public TEntity GetByObjectId(object id)
-        {
-            return _context.Set<TEntity>().Find(id);
-        }
-
-        public async Task<TEntity> GetByObjectIdAsync(object id)
+        public async Task<TEntity> GetByIdAsync(string id)
         {
             return await _context.Set<TEntity>().FindAsync(id);
         }
@@ -158,7 +143,12 @@ namespace SpicyRestaurant.DAL.Repositories
             await _context.Set<TEntity>().AddAsync(entity);
         }
 
-        public void Edit(TEntity entity)
+        public void Update(TEntity entity)
+        {
+            _context.Set<TEntity>().Update(entity);
+        }
+
+        public void UpdateStatus(TEntity entity)
         {
             _context.Set<TEntity>().Update(entity);
         }

@@ -11,7 +11,7 @@
         "projectName": "SpicyRestaurant.BLL",
         "projectPath": "C:\\Users\\Ali\\source\\repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\SpicyRestaurant.BLL.csproj",
         "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ali\\Source\\Repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\obj\\",
+        "outputPath": "C:\\Users\\Ali\\source\\repos\\AliEenN\\Spicy-Restaurant-API\\SpicyRestaurant.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
